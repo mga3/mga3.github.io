@@ -18,37 +18,38 @@
             display: inline-block;
             text-align: left;
         }
-        .sub-list {
-            margin-left: 20px;
-            display: none; /* Hidden by default */
+        details {
+            margin-bottom: 10px;
         }
-        .dropdown {
+        summary {
             cursor: pointer;
             font-weight: bold;
+            font-size: 1.1em;
+        }
+        .project-link {
+            text-decoration: none;
+            font-weight: bold;
             color: #007bff;
-            text-decoration: underline;
         }
     </style>
-    <script>
-        function toggleSublist(id) {
-            var sublist = document.getElementById(id);
-            if (sublist.style.display === "none") {
-                sublist.style.display = "block";
-            } else {
-                sublist.style.display = "none";
-            }
-        }
-    </script>
 </head>
 <body>
     <h1>Projects</h1>
     <ul>
         <li>
-            <span class="dropdown" onclick="toggleSublist('project1-sublist')">▶ Project 1 - {targets}</span>
-            <ul id="project1-sublist" class="sub-list">
-                <li><a href="https://mga3.github.io/targets/setup_dependencies.html" target="_blank">Setup Dependencies</a></li>
-            </ul>
+            <details>
+                <summary>
+                    <a href="https://github.com/mga3/targets/blob/main/README.md" target="_blank" class="project-link">
+                        Project 1 - {targets}
+                    </a>
+                </summary>
+                <ul>
+                    <li><a href="https://mga3.github.io/targets/setup_dependencies.html" target="_blank">Setup Dependencies</a></li>
+                </ul>
+            </details>
         </li>
     </ul>
+     <li><a href="https://mga3.github.io/maximilian_ayling_cv/" target="_blank">CV</a></li>
+     <li><a href="https://mga3.github.io/capstone-project-mga3-submission/" target="_blank">Business Analytics Course Presentation</a></li>
 </body>
 </html>
