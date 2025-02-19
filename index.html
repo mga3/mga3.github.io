@@ -10,34 +10,45 @@
             text-align: center;
         }
         h1 {
-            text-align: center;
+            margin-bottom: 20px;
         }
         ul {
             list-style-type: none;
-            text-align: center;
-        }
-        li {
-            margin-bottom: 10px;
-            text-align: center;
+            padding: 0;
+            display: inline-block;
+            text-align: left;
         }
         .sub-list {
-            text-align: center;
+            margin-left: 20px;
+            display: none; /* Hidden by default */
+        }
+        .dropdown {
+            cursor: pointer;
+            font-weight: bold;
+            color: #007bff;
+            text-decoration: underline;
         }
     </style>
+    <script>
+        function toggleSublist(id) {
+            var sublist = document.getElementById(id);
+            if (sublist.style.display === "none") {
+                sublist.style.display = "block";
+            } else {
+                sublist.style.display = "none";
+            }
+        }
+    </script>
 </head>
 <body>
-    <h1>Welcome to My Project Hub</h1>
-    <p>Click below to visit the websites for each of my repositories:</p>
     <h1>Projects</h1>
     <ul>
         <li>
-            <a href="https://github.com/mga3/targets/blob/main/README.md" target="_blank">Project 1 - {targets}</a>
-            <ul class="sub-list">
+            <span class="dropdown" onclick="toggleSublist('project1-sublist')">▶ Project 1 - {targets}</span>
+            <ul id="project1-sublist" class="sub-list">
                 <li><a href="https://mga3.github.io/targets/setup_dependencies.html" target="_blank">Setup Dependencies</a></li>
             </ul>
         </li>
-        <li><a href="https://mga3.github.io/maximilian_ayling_cv/" target="_blank">CV</a></li>
-        <li><a href="https://mga3.github.io/capstone-project-mga3-submission/" target="_blank">Business Analytics Course Presentation</a></li>
     </ul>
 </body>
 </html>
