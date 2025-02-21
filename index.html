@@ -8,9 +8,9 @@
         body {
             font-family: Arial, sans-serif;
             text-align: left;
-            max-width: 800px; /* Ensures readable width on large screens */
-            margin: 0 auto; /* Centers content */
-            padding: 20px; /* Adds space around content */
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px; 
         }
         h1 {
             margin-bottom: 20px;
@@ -18,8 +18,6 @@
         ul {
             list-style-type: none;
             padding: 0;
-            display: inline-block;
-            text-align: left;
         }
         details {
             margin-bottom: 10px;
@@ -34,36 +32,44 @@
             font-weight: bold;
             color: #007bff;
         }
+        .section {
+            margin-bottom: 30px; 
+        }
 
         /* Mobile-friendly adjustments */
         @media (max-width: 600px) {
             body {
-                max-width: 95%; /* Expands for smaller screens */
-                padding: 10px; /* Reduces padding */
+                max-width: 95%; 
+                padding: 10px; 
             }
         }
     </style>
 </head>
 <body>
-    <h1>Projects</h1>
-    <ul>
-        <li>
-            <details>
-                <summary>
-                    <a href="https://github.com/mga3/targets/blob/main/README.md" target="_blank" class="project-link">
-                        Project 1 - {targets}
-                    </a>
-                </summary>
-                <ul>
-                    <li><a href="https://mga3.github.io/targets/setup_dependencies.html" target="_blank">Setup Dependencies</a></li>
-                </ul>
-            </details>
-        </li>
-    </ul>
-    <ul>
-        <li><a href="https://mga3.github.io/maximilian_ayling_cv/" target="_blank">CV</a></li>
-        <li><a href="https://mga3.github.io/capstone-project-mga3-submission/" target="_blank">Business Analytics Course Presentation</a></li>
-    </ul>
+    <div class="section">
+        <h1>Projects</h1>
+        <ul>
+            <li>
+                <details>
+                    <summary>
+                        <a href="https://github.com/mga3/targets/blob/main/README.md" target="_blank" class="project-link">
+                            Project 1 - {targets}
+                        </a>
+                    </summary>
+                    <ul>
+                        <li><a href="https://mga3.github.io/targets/setup_dependencies.html" target="_blank">Setup Dependencies</a></li>
+                    </ul>
+                </details>
+            </li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <h1>Other Links</h1>
+        <ul>
+            <li><a href="https://mga3.github.io/maximilian_ayling_cv/" target="_blank">CV</a></li>
+            <li><a href="https://mga3.github.io/capstone-project-mga3-submission/" target="_blank">Business Analytics Course Presentation</a></li>
+        </ul>
+    </div>
 </body>
 </html>
-
