@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects</title>
+    <title>Maximilian Ayling - mga3</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            text-align: center;
+            text-align: left;
+            max-width: 800px; /* Ensures readable width on large screens */
+            margin: 0 auto; /* Centers content */
+            padding: 20px; /* Adds space around content */
         }
         h1 {
             margin-bottom: 20px;
@@ -31,6 +34,14 @@
             font-weight: bold;
             color: #007bff;
         }
+
+        /* Mobile-friendly adjustments */
+        @media (max-width: 600px) {
+            body {
+                max-width: 95%; /* Expands for smaller screens */
+                padding: 10px; /* Reduces padding */
+            }
+        }
     </style>
 </head>
 <body>
@@ -49,7 +60,10 @@
             </details>
         </li>
     </ul>
-     <li><a href="https://mga3.github.io/maximilian_ayling_cv/" target="_blank">CV</a></li>
-     <li><a href="https://mga3.github.io/capstone-project-mga3-submission/" target="_blank">Business Analytics Course Presentation</a></li>
+    <ul>
+        <li><a href="https://mga3.github.io/maximilian_ayling_cv/" target="_blank">CV</a></li>
+        <li><a href="https://mga3.github.io/capstone-project-mga3-submission/" target="_blank">Business Analytics Course Presentation</a></li>
+    </ul>
 </body>
 </html>
+
