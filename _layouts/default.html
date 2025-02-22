@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title }}</title>
+    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="{{ site.baseurl }}/" class="nav-title">{{ site.title }}</a>
+        <div class="nav-links">
+            <a href="https://mga3.github.io/targets/" target="_blank">Project 1</a>
+            <a href="https://mga3.github.io/maximilian_ayling_cv/" target="_blank">CV</a>
+            <a href="https://mga3.github.io/capstone-project-mga3-submission/" target="_blank">Business Analytics Course</a>
+        </div>
+    </nav>
+
+    <div class="content">
+        {{ content }}
+    </div>
+</body>
+</html>
